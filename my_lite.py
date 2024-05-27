@@ -17,7 +17,7 @@ def create_user_table() -> bool:
         conn.commit()
         return True
     except Exception as error:
-        print("An exception occurred:", error.__name__)
+        print("An exception occurred:", error)
     finally:
         conn.close()
 
